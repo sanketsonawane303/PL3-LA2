@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="sanket sonawane">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <script src="https://kit.fontawesome.com/f05c28147a.js" crossorigin="anonymous"></script>
+        <script src="js/links.js"></script>
+        <title>Contact</title>
+        <style>
+            .banner {
+                background-image: url(images/mailbox.jpg);
+                background-position: 50% 70%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container-fluid">
+                <div class="row center-xs middle-xs">
+                    <div class="col-xs-12 col-md-1">
+                        <div class="box">
+                            <div id="logo"><b>S</b></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-offset-7 col-md-4 nav">
+                        <div class="row center-xs middle-xs">
+                            <div class="col-xs-12 col-md-3">
+                                <div class="box">
+                                    <a href="index.html">HOME</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="box">
+                                    <a href="about.html">ABOUT</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="box">
+                                    <a href="hobbies.html">HOBBIES</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="box">
+                                    <a href="contact.html" class="active">CONTACT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-text">Contact Me</div>
+        </div>
+        <div class="main">
+            <div class="contact">
+                <div class="container-fluid padding-top padding-bottom">
+                    <div class="row center-xs middle-xs around-xs">
+                        <div class="col-xs-1">
+                            <div class="box">
+                                <i class="fab fa-facebook" onclick="openFacebook()"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-1">
+                            <div class="box">
+                                <i class="fab fa-instagram" onclick="openInstagram()"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-1">
+                            <div class="box">
+                                <i class="fab fa-quora" onclick="openQuora()"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-1">
+                            <div class="box">
+                                <i class="fab fa-linkedin" onclick="openLinkedIn()"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-1">
+                            <div class="box">
+                                <i class="fab fa-google" onclick="showGmailID()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center-xs middle-xs" id="gmail-container">
+                        <div class="col-xs-12 col-md-5">
+                            <div class="box" id="gmail">
+                                <div class="card active-card">
+                                    <div class="row middle-xs">
+                                        <div class="col-xs-10">
+                                            <div class="box">
+                                                <div class="text">
+                                                    sanket.sonawane123@gmail.com
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <div class="box">
+                                                <div class="text">
+                                                    <div class="close" onclick="hideGmailID()">
+                                                        &times;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="feedback padding-bottom">
+                <div class="container-fluid">
+                    <div class="row center-xs middle-xs">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <h1>Feedback</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <form method="POST" autocomplete="off">
+                        <div class="row center-xs middle-xs padding-bottom">
+                            <div class="col-xs-12 col-md-3">
+                                <div class="box form">
+                                    <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-offset-1 col-md-3">
+                                <div class="box form">
+                                    <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row center-xs middle-xs padding-bottom">
+                            <div class="col-xs-12 col-md-3">
+                                <div class="box form">
+                                    <input type="tel" name="phone-no" id="phone-no" placeholder="Phone no. (10 digit)" pattern="[0-9]{10}">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-offset-1 col-md-3">
+                                <div class="box form">
+                                    <input type="email" name="email" id="email" placeholder="Email ID">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row center-xs middle-xs padding-bottom">
+                            <div class="col-xs-12 col-md-7">
+                                <div class="box form">
+                                    <textarea name="feedback-message" id="feedback-message" rows="10" placeholder="Feedback"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row center-xs middle-xs">
+                            <div class="col-xs-4 col-md-2">
+                                <div class="box">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="padding-bottom"></div>
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row center-xs middle-xs">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <p>Copyright &copy; 2020 Sanket Sonawane</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

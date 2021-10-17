@@ -1,0 +1,46 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(139, 96, 16, 1.0);
+    z-index: 1;
+}
+
+.nav a:link, .nav a:visited {
+    display: block;
+    font-family: 'Baloo Chettan 2', Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 25px 0;
+    transition: 0.25s ease;
+}
+
+.nav a:hover, .nav a:active {
+    background-color: rgba(107, 142, 35, 1.0);
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        position: relative;
+    }
+
+    .nav a:link, .nav a:visited {
+        padding: 5px 0;
+    }
+
+    .navbar .container-fluid {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+#logo {
+    font-family: 'Great Vibes';
+    font-size: 2.5vw;
+    padding-top: 5px;
+    text-shadow: 2px 2px #222222;
+    color: whitesmoke;
+}
+
+.active {
+    background-color: rgba(107, 142, 35, 0.85);
+}

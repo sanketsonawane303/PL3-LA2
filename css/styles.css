@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lexend Deca';
+}
+
+::selection {
+    background-color: rgba(139, 96, 16, 0.95);
+    color: whitesmoke;
+}
+
+.banner {
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 8px;
+    right: 30px;
+    font-family: Tangerine;
+    color: whitesmoke;
+    text-shadow: 2px 2px #222222;
+    font-size: 9vw;
+}
+
+#myphoto {
+    width: 75%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.75);
+    background-color: rgba(107, 142, 35, 0.85);
+    color: whitesmoke;
+}
+
+.pointer .card:hover {
+    cursor: pointer;
+}
+
+.padding-top {
+    padding-top: 50px;
+}
+
+.padding-bottom {
+    padding-bottom: 20px;
+}
+
+hr {
+    width: 80%;
+    border: 3px solid rgba(107, 142, 35, 0.85);
+    border-radius: 3px;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skills .card-image {
+    background-size: contain;
+}
+
+.text {
+    padding: 25px 15px;
+}
+
+.active-card {
+    background-color: rgba(139, 96, 16, 0.95);
+    color: whitesmoke;
+}
+
+.code {
+    font-family: 'Lexend Deca';
+    font-size: 300%;
+    padding-bottom: 0px;
+}
+
+.footer {
+    background-color: rgba(107, 142, 35, 0.85);
+    color: whitesmoke;
+}
+
+i.fab {
+    font-size: 7vw;
+    cursor: pointer;
+}
+
+.fa-facebook {
+    color: #1778F2;
+}
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-quora {
+    color: #B92B27;
+}
+
+.fa-linkedin {
+    color: #006192;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+#gmail-container {
+    padding-top: 5px;
+}
+
+#gmail {
+    display: none;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 3vw;
+}
+
+.close:hover {
+    color: black;
+}
+
+.form {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: Montserrat;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bbbbbb;
+    display: inline-block;
+}
+
+.bar {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgba(139, 96, 16, 0.95);
+    transition: width 0.5s;
+}
+
+input + .bar {
+    position: absolute;
+    bottom: 0;
+}
+
+input:focus + .bar {
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: rgba(139, 96, 16, 0.95);
+    color: whitesmoke;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(107, 142, 35, 0.85);
+}
+
+textarea {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: Montserrat;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    display: inline-block;
+    border-radius: 10px;
+    resize: none;
+}
+
+img.qoute-image {
+    width: 75%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.youtube iframe {
+    border-radius: 20px;
+}
+
+.margin {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu-item {
+    padding: 10px;
+    border-right: 3px solid rgba(139, 96, 16, 0.95);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.menu-item:hover {
+    border-right: 3px solid rgba(107, 142, 35, 0.85);
+    background-color: rgba(107, 142, 35, 0.35);
+}
+
+.display-item video {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.display-item {
+    display: none;
+}

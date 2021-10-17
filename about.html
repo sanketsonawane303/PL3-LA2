@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="sanket sonawane">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <script src="js/links.js"></script>
+        <title>About</title>
+        <style>
+            .banner {
+                background-image: url(images/road-between-trees.jpg);
+                background-position: 50% 75%;
+            }
+
+            #apeejay {
+                background-image: url(images/apeejay-school.jpg);
+            }
+
+            #walchand {
+                background-image: url(images/walchand-college.jpg);
+            }
+
+            #wardha {
+                background-image: url(images/wardha.jpg);
+            }
+
+            #bangalore {
+                background-image: url(images/bangalore.jpg);
+            }
+
+            #san-diego {
+                background-image: url(images/san-diego.jpg);
+            }
+
+            #kharghar {
+                background-image: url(images/kharghar.jpg);
+                background-size: 100% 100%;
+            }
+
+            #sangli {
+                background-image: url(images/sangli.jpg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container-fluid">
+                <div class="row center-xs middle-xs">
+                    <div class="col-xs-12 col-md-1">
+                        <div class="box">
+                            <div id="logo"><b>S</b></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-offset-7 col-md-4 nav">
+                        <div class="row center-xs middle-xs">
+                            <div class="col-xs-12 col-md-3">
+                                <div class="box">
+                                    <a href="index.html">HOME</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="box">
+                                    <a href="about.html" class="active">ABOUT</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="box">
+                                    <a href="hobbies.html">HOBBIES</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <div class="box">
+                                    <a href="contact.html">CONTACT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-text">About</div>
+        </div>
+        <div class="main">
+            <div class="intro">
+                <div class="container-fluid padding-top padding-bottom">
+                    <div class="row center-xs middle-xs">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="box">
+                                <img src="images/myphoto.jpg" alt="myphoto" id="myphoto" class="card">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-8">
+                            <div class="box">
+                                <h2>I am Sanket Sonawane</h2>
+                                <p>I am from Navi Mumbai and currently studying in Walchand College of Engineering, Sangli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="education">
+                <div class="container-fluid padding-bottom pointer">
+                    <div class="row center-xs middle-xs">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <h1>Education</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center-xs middle-xs">
+                        <div class="col-xs-12 col-md-offset-2 col-md-3">
+                            <div class="box">
+                                <div class="card" onclick="openApeejay()">
+                                    <div class="card-image" id="apeejay"></div>
+                                    <div class="text">
+                                        Apeejay School, Kharghar, Navi Mumbai
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-offset-2 col-md-3">
+                            <div class="box">
+                                <div class="card active-card" onclick="openWalchand()">
+                                    <div class="card-image" id="walchand"></div>
+                                    <div class="text">
+                                        Walchand College of Engineering, Sangli
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="places">
+                <div class="container-fluid padding-bottom pointer">
+                    <div class="row center-xs middle-xs">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <h1>Places Lived</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center-xs middle-xs around-md padding-bottom">
+                        <div class="col-xs-12 col-md-3">
+                            <div class="box">
+                                <div class="card" onclick="mapWardha()">
+                                    <div class="card-image" id="wardha"></div>
+                                    <div class="text">
+                                        Wardha, Maharashtra
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <div class="box">
+                                <div class="card" onclick="mapBangalore()">
+                                    <div class="card-image" id="bangalore"></div>
+                                    <div class="text">
+                                        Bangalore, Karnataka
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <div class="box">
+                                <div class="card" onclick="mapSanDiego()">
+                                    <div class="card-image" id="san-diego"></div>
+                                    <div class="text">
+                                        San Diego, California
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center-xs middle-xs">
+                        <div class="col-xs-12 col-md-offset-2 col-md-3">
+                            <div class="box">
+                                <div class="card active-card" onclick="mapKharghar()">
+                                    <div class="card-image" id="kharghar"></div>
+                                    <div class="text">
+                                        Kharghar, Navi Mumbai
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-offset-2 col-md-3">
+                            <div class="box">
+                                <div class="card active-card" onclick="mapSangli()">
+                                    <div class="card-image" id="sangli"></div>
+                                    <div class="text">
+                                        Sangli, Maharashtra
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="skills">
+                <div class="container-fluid padding-bottom">
+                    <div class="row center-xs middle-xs">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <h1>Skills</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center-xs middle-xs around-md padding-bottom">
+                        <div class="col-xs-12 col-md-3">
+                            <div class="box">
+                                <div class="card active-card">
+                                    <div class="text code">.c</div>
+                                    <div class="text">
+                                        C
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <div class="box">
+                                <div class="card active-card">
+                                    <div class="text code">.cpp</div>
+                                    <div class="text">
+                                        C++
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <div class="box">
+                                <div class="card active-card">
+                                    <div class="text code">.py</div>
+                                    <div class="text">
+                                        Python
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center-xs middle-xs around-md padding-bottom">
+                        <div class="col-xs-12 col-md-3">
+                            <div class="box">
+                                <div class="card active-card">
+                                    <div class="text code">.html</div>
+                                    <div class="text">
+                                        HTML
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <div class="box">
+                                <div class="card active-card">
+                                    <div class="text code">.css</div>
+                                    <div class="text">
+                                        CSS
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <div class="box">
+                                <div class="card active-card">
+                                    <div class="text code">.js</div>
+                                    <div class="text">
+                                        JavaScript
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center-xs middle-xs around-md padding-bottom">
+                        <div class="col-xs-12 col-md-3">
+                            <div class="box">
+                                <div class="card active-card">
+                                    <div class="text code">.sql</div>
+                                    <div class="text">
+                                        SQL
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center-xs middle-xs">
+                        <div class="col-xs-12 col-md-5">
+                            <div class="box">
+                                <div class="card">
+                                    <div class="text">
+                                        More Coming Soon ...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="padding-bottom"></div>
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row center-xs middle-xs">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <p>Copyright &copy; 2020 Sanket Sonawane</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

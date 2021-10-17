@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-image: url(../images/brown-tree-trunk.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::selection {
+    background-color: rgba(139, 96, 16, 0.95);
+    color: whitesmoke;
+}
+
+
+.header {
+    height: 85vh;
+}
+
+#text-small, #text-big {
+    font-family: Niconne;
+    color: #eeeeee;
+    text-shadow: 2px 2px #222222;
+}
+
+#text-small {
+    font-size: 4vw;
+}
+
+#text-big {
+    font-size: 9vw;
+}
